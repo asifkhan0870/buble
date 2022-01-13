@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Bulbe on/off by JavaScript</title>
+
+        <style>
+            #myImage{
+              margin: 0px 150px;
+            }
+
+            body{
+                background:linear-gradient(red,blue,white,green,yellow);
+            }
+
+            #leftbotton{
+                margin-left: 12px;
+            }
+
+            #rightbotton{
+                margin-right: 12px;
+            }
+
+
+        </style>
+    </head>
+<body>
+    <marquee behavior="" direction="left">
+
+        <p>By JavaScript you can do anything with the Website.</p>
+    </marquee>
+    <marquee behavior="" direction="right">
+
+        <p>I have shown you the practical exemple of it.</p>
+    </marquee>
+
+
+<button id="leftbotton" onclick="document.getElementById('myImage').src='/pic_bulbon.gif'">Turn on the light</button>
+
+<img id="myImage" src="/pic_bulboff.gif" style="width:100px">
+
+<button id="rightbutton" onclick="document.getElementById('myImage').src='/pic_bulboff.gif'">Turn off the light</button>
+
+</body>
+</html>
